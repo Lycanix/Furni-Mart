@@ -1,3 +1,7 @@
+#app {
+	margin-top: 80px; /* sama dengan tinggi navbar */
+}
+
 /* =========================
         NAVBAR
 ========================= */
@@ -35,4 +39,57 @@
 /* branding kiri */
 .navbar-left a {
 	font-weight: bold;
+}
+
+/* =========================
+        Landing Page
+========================= */
+
+.landing-hero {
+	width: 98%;
+	height: 580px;
+	margin: 0 auto;
+	overflow: hidden;
+
+	border-radius: 16px; /* sudut tumpul */
+}
+
+.landing-hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: bottom;
+	display: block;
+}
+/* class="landing-hero" */
+
+/* PRODUCTS PAGE LAYOUT */
+.products-layout {
+	width: 98%;
+	margin: 0 auto;
+
+	display: flex;
+	gap: 20px;
+}
+
+/* SIDEBAR */
+.products-sidebar {
+	width: 220px; /* kecil & konsisten */
+	min-height: 400px;
+
+	background-color: #e0e0e0;
+	padding: 16px;
+	box-sizing: border-box;
+	border-radius: 12px;
+}
+
+/* CONTENT */
+.products-content {
+	flex: 1; /* ambil sisa ruang */
+	min-height: 400px;
+
+	background-color: brown;
+	padding: 16px;
+	box-sizing: border-box;
+	border-radius: 12px;
 }
