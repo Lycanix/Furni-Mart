@@ -1,7 +1,7 @@
 const routes = {
 	landing: landingPage,
 	product: productsPage,
-	// wishlist,
+	wishlist: wishlistPage,
 	// about,
 	// profile,
 	// cart,
