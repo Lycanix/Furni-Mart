@@ -63,6 +63,10 @@
 }
 /* class="landing-hero" */
 
+/* =========================
+        Products Page
+========================= */
+
 /* PRODUCTS PAGE LAYOUT */
 .products-layout {
 	width: 98%;
@@ -93,3 +97,8 @@
 	box-sizing: border-box;
 	border-radius: 12px;
 }
+
+/* =========================
+        Detail Product Page
+========================= */
+/* style product detail here */
