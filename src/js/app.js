@@ -3,7 +3,7 @@ const routes = {
 	product: productsPage,
 	wishlist: wishlistPage,
 	// about,
-	// profile,
+	profile: profilePage,
 	cart: cartPage,
 };
 
