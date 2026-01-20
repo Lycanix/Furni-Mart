@@ -2,10 +2,19 @@ const routes = {
 	landing: landingPage,
 	product: productsPage,
 	wishlist: wishlistPage,
-	// about,
+	about: loginPage,
 	profile: profilePage,
 	cart: cartPage,
 };
+
+let authUser = null;
+
+function showNavbar(show) {
+	const navbar = document.getElementById('navbar');
+	if (!navbar) return;
+
+	navbar.style.display = show ? 'block' : 'none';
+}
 
 function navigate(page) {
 	const handler = routes[page];
