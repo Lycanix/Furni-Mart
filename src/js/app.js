@@ -4,7 +4,7 @@ const routes = {
 	wishlist: wishlistPage,
 	// about,
 	// profile,
-	// cart,
+	cart: cartPage,
 };
 
 function navigate(page) {
