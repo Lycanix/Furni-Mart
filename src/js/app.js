@@ -13,7 +13,13 @@ function showNavbar(show) {
 	const navbar = document.getElementById('navbar');
 	if (!navbar) return;
 
-	navbar.style.display = show ? 'block' : 'none';
+	if (show) {
+		navbar.style.display = 'flex';
+		app.style.marginTop = '80px';
+	} else {
+		navbar.style.display = 'none';
+		app.style.marginTop = '0';
+	}
 }
 
 function navigate(page) {
