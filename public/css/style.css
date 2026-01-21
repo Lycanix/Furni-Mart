@@ -1,5 +1,52 @@
+:root {
+	/* COLORS */
+	--color-primary: #2e8b7d;
+	--color-primary-hover: #267366;
+	--color-primary-active: #1f5f55;
+
+	--color-bg-soft: #e6f4f1;
+	--color-surface: #ffffff;
+
+	--color-text-main: #1f2f2c;
+	--color-text-muted: #4b6f68;
+
+	--color-border: #cfe6e1;
+	--color-input-bg: #f7fbfa;
+
+	/* TYPOGRAPHY */
+	--font-main:
+		system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial,
+		sans-serif;
+
+	--font-size-h2: 24px;
+	--font-size-body: 14px;
+	--font-size-button: 15px;
+	--font-size-small: 13px;
+
+	/* RADIUS */
+	--radius-sm: 8px;
+	--radius-md: 10px;
+	--radius-lg: 16px;
+}
+
+body {
+	margin: 0;
+	background-color: var(--color-bg-soft);
+	font-family: var(--font-main);
+	color: var(--color-text-main);
+}
+
 #app {
-	margin-top: 80px; /* sama dengan tinggi navbar */
+	margin-top: 80px;
+}
+
+a {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-primary-hover);
 }
 
 /* =========================
@@ -18,8 +65,13 @@
 	height: 60px;
 	box-sizing: border-box;
 	padding: 10px 20px;
-	background-color: aqua;
+	background-color: var(--color-surface);
+	border-bottom: 1px solid var(--color-border);
 	z-index: 1000;
+}
+
+.navbar a {
+	color: var(--color-text-main);
 }
 
 /* group layout */
@@ -51,7 +103,7 @@
 	margin: 0 auto;
 	overflow: hidden;
 
-	border-radius: 16px; /* sudut tumpul */
+	border-radius: var(--radius-lg);
 }
 
 .landing-hero img {
@@ -81,7 +133,8 @@
 	width: 220px; /* kecil & konsisten */
 	min-height: 400px;
 
-	background-color: #e0e0e0;
+	background-color: var(--color-surface);
+	border: 1px solid var(--color-border);
 	padding: 16px;
 	box-sizing: border-box;
 	border-radius: 12px;
@@ -92,7 +145,8 @@
 	flex: 1; /* ambil sisa ruang */
 	min-height: 400px;
 
-	background-color: brown;
+	background-color: var(--color-surface);
+	border: 1px solid var(--color-border);
 	padding: 16px;
 	box-sizing: border-box;
 	border-radius: 12px;
@@ -117,3 +171,116 @@
         profile Page
 ========================= */
 /* style profile here */
+
+/* =========================
+        Login Page
+========================= */
+
+.login-page {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--color-bg-soft);
+}
+
+/* LEFT SIDE (branding / image) */
+.login-left {
+	flex: 1;
+	padding: 60px;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	color: #1f2f2c;
+}
+
+/* RIGHT SIDE (form) */
+.login-right {
+	width: 420px;
+	margin-left: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-color: var(--color-surface);
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+/* FORM CARD */
+#login-form {
+	width: 100%;
+}
+
+/* FORM TITLE */
+.login-right h2 {
+	margin-bottom: 24px;
+	color: #2e8b7d;
+}
+
+/* FORM GROUP */
+#login-form div {
+	margin-bottom: 18px;
+}
+
+/* LABEL */
+#login-form label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 14px;
+	color: #1f2f2c;
+}
+
+/* INPUT */
+#login-form input {
+	width: 100%;
+	padding: 12px 14px;
+
+	border-radius: 10px;
+	border: 1px solid #cfe6e1;
+	background-color: #f7fbfa;
+
+	font-size: 14px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#login-form input:focus {
+	border-color: #2e8b7d;
+	background-color: #ffffff;
+}
+
+/* BUTTON */
+#login-form button {
+	width: 100%;
+	padding: 12px;
+	margin-top: 10px;
+
+	border: none;
+	border-radius: 10px;
+	background-color: var(--color-primary);
+	color: white;
+
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#login-form button:hover {
+	background-color: var(--color-primary-hover);
+}
+
+/* REGISTER LINK */
+#login-form p {
+	margin-top: 16px;
+	font-size: 13px;
+	color: #1f2f2c;
+}
+
+#login-form a {
+	color: #2e8b7d;
+	text-decoration: none;
+	font-weight: 500;
+}
