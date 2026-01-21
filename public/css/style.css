@@ -284,3 +284,89 @@ a:hover {
 	text-decoration: none;
 	font-weight: 500;
 }
+
+/* =========================
+        Register Page
+========================= */
+
+.register-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: var(--color-bg-soft);
+}
+
+.register-center {
+	width: 420px;
+	padding: 40px;
+	background-color: var(--color-surface);
+	border-radius: 12px;
+}
+
+.register-center h2 {
+	margin-bottom: 24px;
+	color: #2e8b7d;
+}
+
+#register-form {
+	width: 100%;
+}
+
+#register-form div {
+	margin-bottom: 18px;
+}
+
+.form-row {
+	display: flex;
+	gap: 12px;
+}
+
+.form-group {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+#register-form label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 14px;
+	color: #1f2f2c;
+}
+
+#register-form input {
+	width: 100%;
+	padding: 12px 14px;
+
+	border-radius: 10px;
+	border: 1px solid #cfe6e1;
+	background-color: #f7fbfa;
+
+	font-size: 14px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#register-form input:focus {
+	border-color: #2e8b7d;
+	background-color: #ffffff;
+}
+
+#register-form button {
+	width: 100%;
+	padding: 12px;
+	margin-top: 10px;
+
+	border: none;
+	border-radius: 10px;
+	background-color: var(--color-primary);
+	color: white;
+
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#register-form button:hover {
+	background-color: var(--color-primary-hover);
+}
