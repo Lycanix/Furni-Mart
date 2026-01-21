@@ -4,8 +4,20 @@ function loginPage() {
 	fetch('src/pages/login.html')
 		.then((res) => res.text())
 		.then((html) => {
-			document.getElementById('app').innerHTML = html;
+			const loginEl = document.getElementById('app');
+			loginEl.innerHTML = html;
 			bindLoginEvent();
+
+			loginEl.addEventListener('click', function (e) {
+				const page = e.target.getAttribute('register-now');
+				if (!page) return;
+
+				// console log untuk melihat sementara
+				console.log('navigate to:', page);
+
+				e.preventDefault();
+				navigate(page);
+			});
 		});
 }
 

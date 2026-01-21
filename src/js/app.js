@@ -5,6 +5,7 @@ const routes = {
 	about: loginPage,
 	profile: profilePage,
 	cart: cartPage,
+	// register,
 };
 
 let authUser = null;
